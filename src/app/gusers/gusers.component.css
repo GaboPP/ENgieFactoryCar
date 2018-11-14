@@ -1,0 +1,17 @@
+.header-image {
+    background-image: url('../../assets/brain.png');
+    background-size: cover;
+  }    
+  .header-image2 {
+      background-image: url('../../assets/editaru.png');
+      background-size: cover;
+      left: 0;
+    }
+  .header-image3 {
+      background-image: url('../../assets/deleteu.png');
+      background-size: cover;
+    }
+  
+h1{
+  font-family: 'Delius';
+}

@@ -1,0 +1,86 @@
+
+<div style="background-color:white;">
+    <mat-grid-list cols="2" rowHeight="13:4">
+    
+    
+        <mat-grid-tile [rowspan]="1">
+            
+                <div class="col-2"></div>
+                <div class="col-6">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <div mat-card-avatar class="header-image"></div>
+                                <mat-card-title>Crear</mat-card-title>
+                                <mat-card-subtitle>Usuarios</mat-card-subtitle>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>
+                                Acá podrás adherir nuevos Usuarios!
+                                </p>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button mat-button (click)="crearuser()">crear</button>
+                            </mat-card-actions>
+                            </mat-card>
+    
+    </div>
+        </mat-grid-tile>
+    
+    
+        <mat-grid-tile [rowspan]="3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"><h1>Usuarios: </h1></div>
+                    <div class="col-10">
+                        <app-tabla-user></app-tabla-user>      
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+    
+        <mat-grid-tile [rowspan]="1">
+                <div class="col-2"></div>
+                <div class="col-6">
+                <mat-card class="example-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image2"></div>
+                            <mat-card-title>Editar</mat-card-title>
+                            <mat-card-subtitle>Usuarios</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                            Acá podrás editar los Usuarios!
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button (click)="edituser()">Update</button>
+                        </mat-card-actions>
+                        </mat-card>
+                        </div>
+        </mat-grid-tile>
+    
+    
+        <mat-grid-tile [rowspan]="1">
+                <div class="col-2"></div>
+                <div class="col-6">
+                <mat-card class="example-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image3"></div>
+                            <mat-card-title>Borrar</mat-card-title>
+                            <mat-card-subtitle>Usuarios</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                            Acá podrás Borrar Usuarios!
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button (click)="deleteuser()">Delete</button>
+                        </mat-card-actions>
+                        </mat-card>
+                        </div>
+        </mat-grid-tile>
+    
+    </mat-grid-list>
+    
+    </div>

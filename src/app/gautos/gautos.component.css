@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 50%;
+  }
+  
+  .header-image {
+    background-image: url('../../assets/crear.png');
+    background-size: cover;
+  }    
+  .header-image2 {
+      background-image: url('../../assets/editar.png');
+      background-size: cover;
+      left: 0;
+    }
+  .header-image3 {
+      background-image: url('../../assets/delete.png');
+      background-size: cover;
+    }
+  
+h1{
+  font-family: 'Delius';
+}

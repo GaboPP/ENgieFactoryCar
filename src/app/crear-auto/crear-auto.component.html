@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Crea un nuevo auto</h1>
+<div mat-dialog-content>
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Marca</mat-label>
+          <input type="text"  matInput placeholder="..." [(ngModel)]="Marca" name="marca">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Escribe la marca del auto.</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Modelo</mat-label>
+            <input matInput placeholder="..." [(ngModel)]="Modelo" name="modelo">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Escribe el modelo del auto.</mat-hint>
+          </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Año.</mat-label>
+              <input type="number" matInput placeholder="..."[(ngModel)]="anno" name="Anno">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Escribe el año del auto.</mat-hint>
+            </mat-form-field>
+          </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)="crear()">Ok</button>
+</div>

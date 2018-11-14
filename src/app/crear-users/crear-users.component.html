@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Crea un nuevo Usuario</h1>
+<div mat-dialog-content>
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Rut</mat-label>
+          <input type="text"  matInput placeholder="..." [(ngModel)]="Rut" name="rut">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Escribe el Rut del usuario (Sin digito verificador!).</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="..." [(ngModel)]="nombre" name="Nombre">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Escribe el Nombre del usuario a inscribir.</mat-hint>
+          </mat-form-field>
+        </p>
+          <p>
+              <mat-form-field appearance="outline">
+                  <mat-select placeholder="Auto" [formControl]="autoControl" required [(ngModel)]="car" name="car"> 
+                    <mat-option>--</mat-option>
+                    <mat-option *ngFor="let auto of autos" [value]="auto" >
+                        {{auto.auto}}.{{auto.marca}} {{auto.modelo}} {{auto.anno}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="autoControl.hasError('required')">Porfavor elije un auto</mat-error>
+                  <mat-hint>Selecciona el auto que tiene el auto.</mat-hint>
+                </mat-form-field>
+          </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)="crear()">Ok</button>
+</div>

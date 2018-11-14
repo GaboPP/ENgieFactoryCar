@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+.mat-card {
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:100%;
+    }
+mat-card:hover{    
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+  }
+.nav{
+    top: 0;
+    position: fixed;
+    display: block;
+    z-index: 10;
+}

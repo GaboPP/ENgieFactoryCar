@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Borra un auto</h1>
+<h6 mat-dialog-subtitle>PRECAUCIÓN ESTAS APUNTO DE BORRAR UN AUTO</h6>
+<div mat-dialog-content>
+   
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>N°.</mat-label>
+              <input type="number" matInput placeholder="..." [(ngModel)]="i" name="auto">
+              <mat-icon matSuffix>sentiment_dissatisfied</mat-icon>
+              <mat-hint>Escribe el id o número del auto (es la primera columna de la tabla).</mat-hint>
+            </mat-form-field>
+          </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)="deletea()">Ok</button>
+</div>

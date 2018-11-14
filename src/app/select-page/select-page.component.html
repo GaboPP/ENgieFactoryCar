@@ -1,0 +1,51 @@
+
+<mat-grid-list cols="2">
+  <mat-grid-tile><a href="#"><img class="fondo" src="../../assets/solouser.jpg" alt="background image" /></a></mat-grid-tile>
+  <mat-grid-tile style="background-color:rgb(26, 26, 26);">
+    <div class="container" style="padding:15%;">
+      <div class="back">
+    <div class="row front1" >
+        <div class="col-12">
+          <h1>Gestión de Autos</h1>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-6 sublinea"></div>
+        <div class="col-12">
+          <h3>En esta seccion podrás añadir nuevos autos (modelo, marca y año), además, podrás realizar acciones tales como, ver todos tus autos existentes, editarlos y también borrarlos!</h3>
+        </div>
+        <div class="col-5"></div>
+        <div class="col-3">
+          <button mat-fab (click)="goA()" class="btn1"><i class="material-icons">
+              directions_car
+              </i></button>
+        </div>
+        <div class="col-12"><br></div>
+    </div>
+    </div>
+  </div>
+  </mat-grid-tile>
+  <mat-grid-tile style="background-color:rgb(17, 204, 148);">
+      <div class="container" style="padding:15%;">
+         <div class="back2">
+        <div class="row front2">
+              <div class="col-12">
+                <h1>Gestión de Usuarios</h1>
+              </div>
+              <div class="col-3"></div>
+              <div class="col-6 sublinea"></div>
+              <div class="col-12">
+                <h3>En esta seccion podrás añadir nuevos Usuarios, además, podrás realizar acciones tales como, ver todos los usuarios existentes, editarlos y también borrarlos!</h3>
+              </div>
+              <div class="col-5"></div>
+            <div class="col-3">
+                <button mat-fab (click)="goU()" class="btn2"><i class="material-icons">
+                    supervised_user_circle
+                    </i></button>
+            </div>
+            <div class="col-12"><br></div>
+          </div>
+        </div>
+        </div>
+  </mat-grid-tile>  
+  <mat-grid-tile><img class="fondo" src="../../assets/usercar.jpg" alt="background image" /></mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,50 @@
+<h1 mat-dialog-title>Modifica tus autos </h1>
+<div class="row">
+    <div class="col-6">
+        <div mat-dialog-content>
+            <h3 mat-dialog-title>Auto a modificar</h3>
+            <p>
+                    <mat-form-field appearance="outline">
+                      <mat-label>N°</mat-label>
+                      <input type="number" matInput placeholder="..." [(ngModel)]="auto" name="Auto">
+                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                      <mat-hint>Escribe el id o número del auto (primera columna tabla)</mat-hint>
+                    </mat-form-field>
+            </p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div mat-dialog-content>
+            <h3 mat-dialog-title>Modificaciones</h3>
+            <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Marca</mat-label>
+                  <input matInput placeholder="..." [(ngModel)]="Marca" name="marca">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Escribe la marca del auto.</mat-hint>
+                </mat-form-field>
+              </p>
+              <p>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Modelo</mat-label>
+                    <input matInput placeholder="..." [(ngModel)]="Modelo" name="modelo">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>Escribe el modelo del auto.</mat-hint>
+                  </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Año.</mat-label>
+                      <input type="number" matInput placeholder="..." [(ngModel)]="anno" name="Anno">
+                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                      <mat-hint>Escribe el año del auto.</mat-hint>
+                    </mat-form-field>
+                  </p>
+        </div>
+    </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)='update()'>Ok</button>
+</div>

@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Borra un Usuario</h1>
+<h6 mat-dialog-subtitle>PRECAUCIÓN ESTAS APUNTO DE BORRAR UN USUARIO</h6>
+<div mat-dialog-content>
+   
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Rut.</mat-label>
+              <input type="number" matInput placeholder="..." [(ngModel)]="i" name="rut">
+              <mat-icon matSuffix>sentiment_dissatisfied</mat-icon>
+              <mat-hint>Escribe el Rut del usuario.</mat-hint>
+            </mat-form-field>
+          </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)="deleteu()">Ok</button>
+</div>
