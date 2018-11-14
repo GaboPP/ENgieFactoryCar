@@ -5,7 +5,7 @@ Trabajo realizado para postulación a prácticas
 * Recordad que el Rut es un numero (sin puntos)
 ## versiones
 - node.js 8
-- Angula-cli 6
+- Angular-cli 6
 - postgres 10.5
 ## Ejecutar
 *Para instalar pos pacjages se debe ejecutar
