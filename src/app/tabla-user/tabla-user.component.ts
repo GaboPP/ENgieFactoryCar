@@ -37,6 +37,7 @@ export class TablaUserComponent implements OnInit {
   ngOnInit() {
     this.entradasService.getUsers().subscribe(rows => {
       this.Users = rows.data;
+      this.dataSource.data = this.Users;
       this.entradasService.getCars().subscribe(row => {
         this.Autos = row.data;
         for (this.i; this.i < this.Users.length; this.i++) {
