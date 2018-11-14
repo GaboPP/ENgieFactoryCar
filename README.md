@@ -8,7 +8,7 @@ Trabajo realizado para postulación a prácticas
 - Angular-cli 6
 - postgres 10.5
 ## Ejecutar
-*Para instalar pos pacjages se debe ejecutar
+* Para instalar los packages se debe ejecutar
 ~~~
 npm install
 ~~~
